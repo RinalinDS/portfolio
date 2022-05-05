@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    height: 100vh;
+    background-color: lightpink;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.greetings {
+    width: 300px;
+    background-color: darkgrey;
+    margin-left: 50px;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: darkgrey;
+    margin-right: 50px;
+}

@@ -1,0 +1,36 @@
+.contactsBlock {
+    min-height: 100vh;
+    background-color: #4ea84e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+/*.title {*/
+/*    background-color: #d5c2c2;*/
+/*}*/
+
+/*.skills {*/
+/*    border: 1px blue solid;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.test {*/
+/*    border: purple 2px solid;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    */
+/*}*/
+
