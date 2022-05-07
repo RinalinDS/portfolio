@@ -1,6 +1,6 @@
 .skillsBlock {
     min-height: 100vh;
-    background-color: #4ea84e;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,5 @@
     border: purple 2px solid;
     display: flex;
     flex-wrap: wrap;
-    
 }
 

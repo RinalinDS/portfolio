@@ -1,36 +1,31 @@
 .contactsBlock {
-    min-height: 100vh;
     background-color: #4ea84e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .contactsContainer {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 70%;
-    height: 70%;
+    justify-content: flex-start;
 }
 
-/*.title {*/
-/*    background-color: #d5c2c2;*/
-/*}*/
+.title {
+    background-color: #eeeef5;
+}
 
-/*.skills {*/
-/*    border: 1px blue solid;*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-between;*/
-/*    flex-wrap: wrap;*/
-/*}*/
+.contactForm {
+    width: 50%;
+    background-color: #d6d6d6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-/*.test {*/
-/*    border: purple 2px solid;*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    */
-/*}*/
+.contactForm input, .contactForm textarea {
+    width: 100%;
+    resize: none;
+}
+
+.submit_btn {
+    padding: 10px 20px;
+    background-color: #eeeef5;
+}
 

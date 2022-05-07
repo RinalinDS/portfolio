@@ -1,0 +1,17 @@
+
+.title h2 {
+    font-size: 56px;
+    font-weight: 900 !important;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+}
+
+.title span {
+    color: #ffb400
+}
+
+
+

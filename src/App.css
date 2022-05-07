@@ -1,3 +1,8 @@
 .App {
-
+    background-color: #555;
 }
+::selection {
+    background-color: #cfa144!important;
+    color: #fff!important;
+}
+

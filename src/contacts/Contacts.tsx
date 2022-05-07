@@ -6,44 +6,47 @@ import containerStyle from '../common/styles/Container.module.css';
 
 export const Contacts = () => {
 
-    const formik = useFormik({
-        initialValues: {
-            input1: '',
-            input2: '',
-        },
-        onSubmit: values => {
-            alert(JSON.stringify(values));
-        },
-    });
+  const formik = useFormik({
+    initialValues: {
+      input1: '',
+      input2: '',
+      textarea: '',
+    },
+    onSubmit: values => {
+      alert(JSON.stringify(values));
+    },
+  });
 
 
-    return (
-        <div className={styles.contactsBlock}>
+  return (
+    <div className={styles.contactsBlock}>
+      <div className={`${containerStyle.container} ${styles.contactsContainer}`}>
+        <h2 className={styles.title}>Contacts</h2>
+        <form className={styles.contactForm} onSubmit={formik.handleSubmit}>
 
-            <form className={`${containerStyle.container} ${styles.contactsContainer}`} onSubmit={formik.handleSubmit}>
-                <label htmlFor="contacts">Contacts</label>
-                <input
-                    type="text"
-                    {...formik.getFieldProps('input1')}
-                />
+          <input
+            type="text"
+            {...formik.getFieldProps('input1')}
+          />
 
-                <input
-                    type="text"
-                    {...formik.getFieldProps('input2')}
-                />
-                <textarea
+          <input
+            type="text"
+            {...formik.getFieldProps('input2')}
+          />
+          <textarea
 
-                    {...formik.getFieldProps('textarea')}
-                />
-                <div className={styles.button}>
-                <button type="submit">Submit</button>
-                </div>
-            </form>
+            {...formik.getFieldProps('textarea')}
+          />
+
+            <button type="submit" className={styles.submit_btn}>Submit</button>
+
+        </form>
 
 
-        </div>
+      </div>
+    </div>
 
-    );
+  );
 };
 
 export default Contacts;

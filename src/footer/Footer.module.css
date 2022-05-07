@@ -1,28 +1,24 @@
 .footerBlock {
-    min-height: 40vh;
+
     background-color: hotpink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
 }
 
 .footerContainer {
-    width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+  flex-direction: column;
+    justify-content: flex-start;
+
 
 }
 
-.test {
-    border: purple 2px solid;
-    display: flex;
-    flex-wrap: wrap;
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: rosybrown;
 
 }
+
 
 .title {
     background-color: #d5c2c2;
@@ -30,8 +26,9 @@
 
 .socials {
     border: 1px blue solid;
-    width: 100%;
+    width: 250px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 }

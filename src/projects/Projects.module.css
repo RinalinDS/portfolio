@@ -1,28 +1,33 @@
 .projectsBlock {
-    min-height: 100vh;
-    background-color: yellowgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #212529;
+    padding: 100px 0;
 }
 
 .projectsContainer {
-    width: 70%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
-.title {
-    background-color: #d5c2c2;
+
+::selection {
+    background-color: #cfa144!important;
+    color: #fff!important;
 }
 
 .projects {
-    border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 30px;
 }
 
+
+
+@media screen and (max-width: 1266px){
+    .projects {
+        justify-content: center;
+    }
+}
