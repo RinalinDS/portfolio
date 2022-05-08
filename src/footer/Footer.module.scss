@@ -1,6 +1,7 @@
-.footerBlock {
+@import '../common/styles/sass/variables';
 
-    background-color: hotpink;
+.footerBlock {
+    background-color: $bgColor;
 
 
 }
@@ -15,7 +16,7 @@
 .icon {
     height: 60px;
     width: 60px;
-    background-color: rosybrown;
+    background-color: $bgSecondColor;
 
 }
 
@@ -25,10 +26,9 @@
 }
 
 .socials {
-    border: 1px blue solid;
-    width: 250px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    padding: 10px 0 ;
 }

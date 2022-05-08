@@ -1,16 +1,18 @@
+@import '../../styles/sass/variables';
 
-.title h2 {
+.title {
+  & h2 {
     font-size: 56px;
     font-weight: 900 !important;
-    color: #fff;
+    color: $primaryTextColor;
     text-transform: uppercase;
     margin: 0;
     font-family: "Poppins", sans-serif;
     line-height: 1.2;
-}
-
-.title span {
-    color: #ffb400
+  }
+  & span {
+    color: $secondaryTextColor
+  }
 }
 
 

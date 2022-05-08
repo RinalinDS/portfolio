@@ -1,0 +1,78 @@
+@import '../../common/styles/sass/variables';
+
+.project {
+  width: 500px;
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  .imgContainer {
+    display: flex;
+    min-height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.4;
+    }
+
+    .button {
+      background-color: $bgSecondColor;
+      padding: 10px 20px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+      color: $primaryTextColor;
+      position: relative;
+      z-index: 1;
+      text-decoration: none;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .projectTitle {
+      font-size: 26px;
+      margin: 0;
+      line-height: 1.2;
+      font-weight: 600;
+      text-transform: uppercase !important;
+      padding-bottom: 1rem !important;
+      font-family: "Poppins", sans-serif;
+      color: $primaryTextColor;
+    }
+
+    .description {
+      color: $primaryTextColor;
+      font-family: "Open Sans", sans-serif;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

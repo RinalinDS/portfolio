@@ -1,4 +1,4 @@
-import styles from './Icon.module.css';
+import styles from './Icon.module.scss';
 import React from 'react';
 
 export const Icon = () => {

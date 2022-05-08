@@ -1,5 +1,7 @@
+@import '../common/styles/sass/variables';
+
 .contactsBlock {
-    background-color: #4ea84e;
+    background-color: $bgSecondColor;
 }
 
 .contactsContainer {
@@ -19,7 +21,7 @@
     align-items: center;
 }
 
-.contactForm input, .contactForm textarea {
+.contactForm textarea, .contactForm input,  {
     width: 100%;
     resize: none;
 }

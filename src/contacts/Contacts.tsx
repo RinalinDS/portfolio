@@ -1,7 +1,8 @@
 import React from 'react';
 import {useFormik} from 'formik';
-import styles from './Contacts.module.css';
+import styles from './Contacts.module.scss';
 import containerStyle from '../common/styles/Container.module.css';
+import {Title} from '../common/components/title/Title';
 
 
 export const Contacts = () => {
@@ -21,7 +22,7 @@ export const Contacts = () => {
   return (
     <div className={styles.contactsBlock}>
       <div className={`${containerStyle.container} ${styles.contactsContainer}`}>
-        <h2 className={styles.title}>Contacts</h2>
+        <Title text={'Contacts'}/>
         <form className={styles.contactForm} onSubmit={formik.handleSubmit}>
 
           <input
