@@ -6,7 +6,6 @@ type propsType = {
   description: string
   style: {
     backgroundImage: string
-    color: string
   }
   siteUrl: string
 }
@@ -19,11 +18,8 @@ export const Project = (props: propsType) => {
       </div>
       <div className={styles.projectInfo}>
         <h3 className={styles.projectTitle}>{props.title}</h3>
-
-
         <span className={styles.description}>{props.description}</span>
       </div>
-
     </div>
   );
 };

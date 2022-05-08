@@ -8,11 +8,9 @@ import todolistImage from './../assets/image/todolist.jpg'
 
 export const Projects = () => {
   const socialNetworkStyle = {
-    color: 'blue',
     backgroundImage: `url(${socialImage})`
   }
   const todolistStyle = {
-    color: 'blue',
     backgroundImage: `url(${todolistImage})`
   }
   return (

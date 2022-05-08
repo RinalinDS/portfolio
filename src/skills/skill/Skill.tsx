@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skill.module.css'
+import styles from './Skill.module.scss'
 
 
 type propsType = {
@@ -10,9 +10,11 @@ type propsType = {
 export const Skill = (props: propsType) => {
     return (
         <div className={styles.skill}>
-            <div className={styles.icon}/>
-            <h3>{props.title}</h3>
+            <div className={styles.skillIcon}/>
+          <div className={styles.skillInfo}>
+            <h3 className={styles.skillTitle}>{props.title}</h3>
             <span className={styles.description}>{props.description}</span>
+          </div>
         </div>
     );
 };

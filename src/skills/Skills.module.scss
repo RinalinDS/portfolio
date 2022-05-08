@@ -2,33 +2,24 @@
 
 .skillsBlock {
   background-color: $bgSecondColor;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  padding: 100px 0;
 
-.skillsContainer {
-  justify-content: center;
-  width: 70%;
-  height: 70%;
-}
+  .skillsContainer {
+    justify-content: center;
+    width: 70%;
+    height: 70%;
 
-.title {
-  background-color: #d5c2c2;
+    .skills {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      align-items: flex-start; // эта штука помогла чтобы высота не
+      // была такая же как у самого высокого , а у каждого своя
+      margin-top: 30px;
+      @media screen and (max-width: 1074px) {
+        justify-content: center;
+      }
+    }
+  }
 }
-
-.skills {
-  border: 1px blue solid;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.test {
-  border: purple 2px solid;
-  display: flex;
-  flex-wrap: wrap;
-}
-

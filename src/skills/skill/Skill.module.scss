@@ -1,0 +1,36 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+
+.skill {
+  width: 250px;
+  background-color: $bgColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+  .skillIcon {
+    height: 60px;
+    width: 60px;
+    background-color: rosybrown;
+  }
+
+  .skillInfo {
+    padding: 15px 10px;
+
+    .skillTitle {
+      @include text(("Poppins", sans-serif), 26px, 1.2, 600);
+      text-transform: uppercase !important;
+      margin: 0;
+      padding-bottom: 1rem !important;
+    }
+
+    .description {
+      @include text(("Open Sans", sans-serif), 15px, 1.6, 500)
+    }
+  }
+}
+
+
