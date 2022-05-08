@@ -1,5 +1,6 @@
+@import './common/styles/sass/variables';
 .App {
-    background-color: #555;
+    background-color: $bgColor;
 }
 ::selection {
     background-color: #cfa144!important;

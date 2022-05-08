@@ -1,15 +1,14 @@
 @import '../../styles/sass/variables';
+@import '../../styles/sass/mixins';
 
 .title {
   & h2 {
-    font-size: 56px;
+    @include text(("Poppins", sans-serif), 56px, 1.2, null);
     font-weight: 900 !important;
-    color: $primaryTextColor;
-    text-transform: uppercase;
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.2;
+    text-transform: uppercase;
   }
+
   & span {
     color: $secondaryTextColor
   }

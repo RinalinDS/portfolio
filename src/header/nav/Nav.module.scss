@@ -1,0 +1,12 @@
+@import '../../common/styles/sass/mixins';
+
+.nav {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    & a {
+        @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
+        text-decoration: none;
+    }
+}
