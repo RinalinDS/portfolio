@@ -16,7 +16,7 @@ export const Project = (props: propsType) => {
     <div className={styles.project}>
       <div className={styles.imgContainer} style={props.style}>
         <Button text={'View'} url={props.siteUrl} />
-        {/*<a className={styles.button} href={props.siteUrl} target={'_blank'}>View</a>*/}
+
       </div>
       <div className={styles.projectInfo}>
         <h3 className={styles.projectTitle}>{props.title}</h3>

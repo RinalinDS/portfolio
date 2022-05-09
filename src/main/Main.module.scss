@@ -32,8 +32,11 @@
     }
 
     h1 {
-      @include text(("Poppins", sans-serif), 29px, 1.8, 400);
+      @include text(("Poppins", sans-serif), 29px, 1.8, 600);
       margin: 10px 0;
+      @media screen and (max-width: 1143px) {
+        align-items: center;
+      }
     }
 
     @media screen and (max-width: 1143px) {

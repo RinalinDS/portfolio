@@ -19,7 +19,7 @@ export const Contacts = () => {
 
 
   return (
-    <div className={styles.contactsBlock}>
+    <div className={styles.contactsBlock} id={'contacts'}>
       <div className={styles.container}>
         <Title text={'Contacts'}/>
         <form className={styles.form} onSubmit={formik.handleSubmit}>

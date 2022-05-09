@@ -4,7 +4,7 @@ import {Nav} from "./nav/Nav";
 
 export function Header() {
     return (
-        <div className={styles.header}>
+        <div className={styles.header} id={'home'}>
             <Nav/>
         </div>
     );

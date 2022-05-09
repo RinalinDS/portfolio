@@ -7,6 +7,9 @@
     font-weight: 900 !important;
     margin: 0;
     text-transform: uppercase;
+    @media screen and(max-width: 526px) {
+      @include text(("Poppins", sans-serif), 36px, 1.2, null);
+    }
   }
 
   & span {

@@ -1,12 +1,14 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
 
+
 .skillsBlock {
   background-color: $bgSecondColor;
   padding: 100px 0;
 
   .skillsContainer {
     @include container();
+    @include flex(column, flex-start, center, nowrap);
     justify-content: center;
     width: 70%;
     height: 70%;
@@ -14,15 +16,13 @@
     .skills {
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       align-items: flex-start; // эта штука помогла чтобы высота не
       // была такая же как у самого высокого , а у каждого своя
       margin-top: 30px;
       @media screen and (max-width: 1074px) {
         justify-content: center;
-        flex-direction: column;
-        align-items: center;
       }
     }
   }

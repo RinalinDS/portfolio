@@ -1,6 +1,5 @@
 import React, {FC} from 'react';
 import styles from './Projects.module.scss'
-import containerStyle from './../common/styles/Container.module.css'
 import {Project} from "./Project/Project";
 import {Title} from '../common/components/title/Title';
 import socialImage from './../assets/image/social.jpg'
@@ -14,7 +13,7 @@ export const Projects: FC = () => {
     backgroundImage: `url(${todolistImage})`
   }
   return (
-    <div className={styles.projectsBlock}>
+    <div className={styles.projectsBlock} id={'projects'}>
       <div className={styles.projectsContainer}>
         <Title text={'Projects'}/>
         <div className={styles.projects}>

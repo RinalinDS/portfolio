@@ -8,5 +8,6 @@
     & a {
         @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
         text-decoration: none;
+
     }
 }
