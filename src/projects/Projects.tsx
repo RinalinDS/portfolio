@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styles from './Projects.module.scss'
 import containerStyle from './../common/styles/Container.module.css'
 import {Project} from "./Project/Project";
@@ -6,7 +6,7 @@ import {Title} from '../common/components/title/Title';
 import socialImage from './../assets/image/social.jpg'
 import todolistImage from './../assets/image/todolist.jpg'
 
-export const Projects = () => {
+export const Projects: FC = () => {
   const socialNetworkStyle = {
     backgroundImage: `url(${socialImage})`
   }
@@ -15,7 +15,7 @@ export const Projects = () => {
   }
   return (
     <div className={styles.projectsBlock}>
-      <div className={`${containerStyle.container} ${styles.projectsContainer}`}>
+      <div className={styles.projectsContainer}>
         <Title text={'Projects'}/>
         <div className={styles.projects}>
           <Project siteUrl={'https://rinalinds.github.io/mytodolist'} style={todolistStyle} title={'TODOLIST'}
@@ -24,7 +24,6 @@ export const Projects = () => {
                    title={'SOCIAL NETWORK'}
                    description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus non obcaecati porro velit? Aliquam, culpa.'}/>
         </div>
-
       </div>
     </div>
   );

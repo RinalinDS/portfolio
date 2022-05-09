@@ -11,10 +11,11 @@ export function Main() {
       <div className={styles.container}>
         <div className={styles.greetings}>
           <span>Hello there!</span>
-          <h1>I am Denis Pilyutin</h1>
-          <p>Frontend developer</p>
+          <span>My name is Pilyutin <span>Denis</span></span>
+          <h1>Frontend developer</h1>
         </div>
-        <div className={styles.photo} style={style}>
+        <div className={styles.photo} >
+        <div className={styles.image}  />
         </div>
       </div>
     </div>

@@ -8,12 +8,12 @@ export const Contacts = () => {
 
   const formik = useFormik({
     initialValues: {
-      input1: '',
-      input2: '',
-      textarea: '',
+      name: '',
+      email: '',
+      message: '',
     },
     onSubmit: values => {
-      alert(JSON.stringify(values));
+      alert('Sorry, this feature is currently in progress , can you please use links from \'Socials\' ?');
     },
   });
 
@@ -23,6 +23,7 @@ export const Contacts = () => {
       <div className={styles.container}>
         <Title text={'Contacts'}/>
         <form className={styles.form} onSubmit={formik.handleSubmit}>
+
 
           <input
             className={styles.formArea}
