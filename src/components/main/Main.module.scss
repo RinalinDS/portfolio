@@ -9,6 +9,15 @@
   .container {
     @include container();
     @include flex(row, space-around, center, wrap);
+    .particles {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.3;
+      z-index: -1;
+    }
 
     .greetings {
       @include flex(column, flex-start, flex-start, nowrap);
