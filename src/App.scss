@@ -1,11 +1,23 @@
 @import './common/styles/sass/variables';
+
 .App {
-    background-color: $bgColor;
+  > div {
+    &:nth-child(n) {
+      background-color: $bgSecondColor;
+    }
+
+    &:nth-child(2n) {
+      background-color: $bgColor;
+    }
+
+  }
 }
+
 ::selection {
-    background-color: #cfa144!important;
-    color: #fff!important;
+  background-color: #cfa144 !important;
+  color: #fff !important;
 }
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }

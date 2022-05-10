@@ -1,5 +1,5 @@
-@import '../common/styles/sass/variables';
-@import '../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .main {
   min-height: 100vh;
@@ -14,7 +14,7 @@
       @include flex(column, flex-start, flex-start, nowrap);
 
       span {
-        @include text(("Poppins", sans-serif), 28px, 1.2, 600);
+        @include text(("Poppins", sans-serif), 32px, 1.2, 600);
         @media screen and (max-width: 1143px) {
           align-items: center;
         }
@@ -29,16 +29,17 @@
             letter-spacing: 3px;
           }
         }
-      }
 
-      h1 {
-        @include text(("Poppins", sans-serif), 29px, 1.8, 600);
-        margin: 10px 0;
-        @media screen and (max-width: 1143px) {
-          align-items: center;
+        &:nth-child(3) {
+          span div {
+            @include text(("Poppins", sans-serif), 32px, 1.8, 600);
+            margin: 10px 0;
+            @media screen and (max-width: 1143px) {
+              align-items: center;
+            }
+          }
         }
       }
-
       @media screen and (max-width: 1143px) {
         align-items: center;
       }
@@ -56,7 +57,7 @@
         height: 400px;
         width: 300px;
         @include bgSettings();
-        background-image: url('../assets/image/genius.jpg');
+        background-image: url('../../assets/image/genius.jpg');
         background-position: 80% 0;
         @media screen and (max-width: 600px) {
           height: 360px;

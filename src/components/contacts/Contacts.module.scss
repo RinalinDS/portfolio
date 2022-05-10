@@ -1,9 +1,8 @@
-@import '../common/styles/sass/variables';
-@import '../common/styles/sass/mixins';
-@import '../common/components/button/button.module';
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+@import '../../common/components/button/button.module';
 
 .contactsBlock {
-  background-color: $bgSecondColor;
   padding: 100px 0;
 
   .container {
