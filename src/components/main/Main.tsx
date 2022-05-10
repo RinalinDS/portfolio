@@ -16,9 +16,7 @@ export function Main() {
   };
   return (
     <Fade>
-
       <div className={styles.main} id={'main'}>
-
         <div className={styles.container}>
           <Particles options={options} init={initialize} className={styles.particles} />
           <div className={styles.greetings}>

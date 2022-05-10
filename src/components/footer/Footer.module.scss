@@ -26,8 +26,9 @@
         border-radius: 8px;
 
         &:hover {
-          border: 1px solid $secondaryTextColor;
+          //border: 1px solid $secondaryTextColor;
           transition: all 0.3s ease-in-out 0s;
+          background-color: $secondaryTextColor;
         }
 
         @media screen and (max-width: 380px) {

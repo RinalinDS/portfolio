@@ -28,14 +28,14 @@ export const Skills = () => {
         <div className={styles.skillsContainer}>
           <Title text={'Skills'}/>
           <Fade direction={'left'}>
-          <div className={styles.skills}>
-            <Skill title={'HTML/CSS'}
-                   description={'Lorem ipsum dolor sit amet, unde, ut'} style={reactIcon}/>
-            <Skill title={'JS/TS'} description={'Lorem ipsum tatasdasdqwrq'} style={reduxIcon}/>
-            <Skill title={'React'} description={'Lorem ipsum tatasdasdqwrq'} style={jsIcon}/>
-            <Skill title={'React'} description={'Lorem ipsum tatasdasdqwrq'} style={tsIcon}/>
+            <div className={styles.skills}>
+              <Skill title={'React'}
+                     description={'React hooks, functional and class components, creating SPA, TDD/Jest/Storybook'} style={reactIcon}/>
+              <Skill title={'Redux'} description={'Redux Thunk, Redux Saga, Redux Toolkit'} style={reduxIcon}/>
+              <Skill title={'Javascript'} description={'JavaScript ES6+'} style={jsIcon}/>
+              <Skill title={'Typescript'} description={'All my projects made with Typescript'} style={tsIcon}/>
 
-          </div>
+            </div>
           </Fade>
         </div>
       </div>
