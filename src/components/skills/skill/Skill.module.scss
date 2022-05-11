@@ -1,7 +1,6 @@
 @import '../../../common/styles/sass/variables';
 @import '../../../common/styles/sass/mixins';
 
-
 .skill {
   width: 250px;
   display: flex;
@@ -10,13 +9,15 @@
   text-align: center;
   margin: 10px;
 
-
-
   .skillIcon {
     height: 60px;
     width: 60px;
     @include bgSettings();
     margin-bottom: 20px;
+    &:hover {
+      transform: rotate(360deg);
+      transition: all .5s ease-in-out 0s;
+    }
   }
 
   .skillInfo {
