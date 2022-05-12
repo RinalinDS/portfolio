@@ -3,12 +3,10 @@
 
 
 .project {
-  width: 500px;
+  width: 440px;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
-  border-radius: 0 0 5px 5px;
-
 
   .imgContainer {
     display: flex;
@@ -21,21 +19,24 @@
     border-bottom: 3px solid #ffb400;
     border-radius: 5px 5px 0 0;
 
-
-    &::before {
-      position: absolute;
-      content: '';
-      background-color: black;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.4;
+    &:hover {
+      &::before {
+        position: absolute;
+        content: '';
+        background-color: black;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.4;
+      }
     }
   }
 
   .projectInfo {
     padding: 25px 20px;
+    background-color: $bgSecondColor;
+    border-radius: 0 0 5px 5px;
 
     .projectTitle {
       @include text(("Poppins", sans-serif), 26px, 1.2, 600);
@@ -47,6 +48,13 @@
     .description {
       @include text(("Open Sans", sans-serif), 15px, 1.6, 500)
     }
+
+    .technologies {
+      @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
+      padding-top: 10px;
+    }
+
+
   }
 }
 

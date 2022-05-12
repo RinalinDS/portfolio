@@ -9,13 +9,26 @@
   text-align: center;
   margin: 10px;
 
-  .skillIcon {
-    height: 60px;
-    width: 60px;
-    @include bgSettings();
+  .skillContainer {
+    height: 80px;
+    width: 80px;
+    transform: rotate(45deg);
+    background-color: $bgColor;
+    align-items: center;
     margin-bottom: 20px;
+    @include flex(row, center, center, nowrap)
+  }
+
+  .skillIcon {
+    height: 50%;
+    width: 50%;
+    @include bgSettings();
+
+
+    transform: rotate(-45deg);
+
     &:hover {
-      transform: rotate(360deg);
+      transform: rotate(315deg);
       transition: all .5s ease-in-out 0s;
     }
   }
@@ -25,7 +38,7 @@
 
     .skillTitle {
       @include text(("Poppins", sans-serif), 26px, 1.2, 600);
-      text-transform: uppercase !important;
+
       margin: 0;
       padding-bottom: 1rem !important;
     }
