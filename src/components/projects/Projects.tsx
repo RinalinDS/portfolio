@@ -47,12 +47,12 @@ export const Projects: FC = () => {
         <div className={styles.projectsContainer}>
           <Title text={'Projects'}/>
           <div className={styles.projects}>
-            <Project siteUrl={'https://rinalinds.github.io/mytodolist'} style={todolistStyle} title={'TODOLIST'}
+            <Project githubURL={'https://github.com/RinalinDS/mytodolist'} siteUrl={'https://rinalinds.github.io/mytodolist'} style={todolistStyle} title={'TODOLIST'}
                      description={todolistProjectDescription} tech={todolistProjectTech}/>
-            <Project siteUrl={'https://rinalinds.github.io/socialnetwork'} style={socialNetworkStyle}
+            <Project githubURL={'https://github.com/RinalinDS/socialnetwork'} siteUrl={'https://rinalinds.github.io/socialnetwork'} style={socialNetworkStyle}
                      title={'SOCIAL NETWORK'}
                      description={socialNetworkProjectDescription} tech={socialNetworkProjectTech}/>
-            <Project siteUrl={'https://theidiet.github.io/group_projest/#/'} style={cardsStyle}
+            <Project githubURL={'https://github.com/RinalinDS/cards_project'} siteUrl={'https://theidiet.github.io/group_projest/#/'} style={cardsStyle}
                      title={'Learning Cards'}
                      description={cardProjectDescription} tech={cardsProjectTech}/>
           </div>

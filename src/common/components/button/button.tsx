@@ -8,7 +8,7 @@ type ButtonPropsType = {
 
 export const Button: FC<ButtonPropsType> = ({url, text}) => {
   return (
-    <a className={styles.button} href={url} target={'_blank'}>{text}</a>
+    <a className={styles.button} href={url} target={'_blank'} rel={'nofollow noopener noreferrer'}>{text}</a>
   );
 };
 

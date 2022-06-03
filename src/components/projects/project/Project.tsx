@@ -11,19 +11,19 @@ type ProjectPropsType = {
     backgroundImage: string
   }
   siteUrl: string
+  githubURL: string
 }
 
-export const Project: FC<ProjectPropsType> = ({title, style, description, tech, siteUrl}) => {
+export const Project: FC<ProjectPropsType> = ({title, style, description, tech, siteUrl, githubURL}) => {
   return (
     <div className={styles.project}>
       <Tilt tiltEnable={false} scale={1.05}>
         <div className={styles.imgContainer} style={style}>
           <Button text={'View'} url={siteUrl}/>
-
         </div>
       </Tilt>
       <div className={styles.projectInfo}>
-        <h3 className={styles.projectTitle}>{title}</h3>
+      <h3 className={styles.projectTitle}>{title}  <a href={githubURL} style={{fontSize:'12px'}} target={'_blank'} rel={'nofollow noopener noreferrer'}> link to github</a></h3> 
         <span className={styles.description}>{description}</span>
         <div className={styles.technologies}>{tech}</div>
       </div>
