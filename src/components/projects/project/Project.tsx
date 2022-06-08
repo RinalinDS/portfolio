@@ -23,7 +23,7 @@ export const Project: FC<ProjectPropsType> = ({title, style, description, tech, 
         </div>
       </Tilt>
       <div className={styles.projectInfo}>
-      <h3 className={styles.projectTitle}>{title}  <a href={githubURL} style={{fontSize:'12px'}} target={'_blank'} rel={'nofollow noopener noreferrer'}> link to github</a></h3> 
+      <h3 className={styles.projectTitle}>{title}  <a href={githubURL} style={{fontSize:'12px'}} target={'_blank'} rel={'nofollow noopener noreferrer'}> link to github</a></h3>
         <span className={styles.description}>{description}</span>
         <div className={styles.technologies}>{tech}</div>
       </div>

@@ -52,7 +52,7 @@ export const Projects: FC = () => {
             <Project githubURL={'https://github.com/RinalinDS/socialnetwork'} siteUrl={'https://rinalinds.github.io/socialnetwork'} style={socialNetworkStyle}
                      title={'SOCIAL NETWORK'}
                      description={socialNetworkProjectDescription} tech={socialNetworkProjectTech}/>
-            <Project githubURL={'https://github.com/RinalinDS/cards_project'} siteUrl={'https://theidiet.github.io/group_projest/#/'} style={cardsStyle}
+            <Project githubURL={'https://github.com/RinalinDS/learning_cards'} siteUrl={'https://rinalinds.github.io/learning_cards'} style={cardsStyle}
                      title={'Learning Cards'}
                      description={cardProjectDescription} tech={cardsProjectTech}/>
           </div>
