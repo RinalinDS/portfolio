@@ -5,6 +5,7 @@ import {Title} from '../../common/components/title/Title';
 import socialImage from '../../assets/image/social.jpg'
 import todolistImage from '../../assets/image/todolist.jpg'
 import cardsImage from '../../assets/image/cards.jpg'
+import weatherImage from '../../assets/image/weather.jpg'
 import {Fade} from 'react-awesome-reveal';
 
 
@@ -16,6 +17,12 @@ const cardProjectDescription = 'SPA for learning by cards. Implemented: login pa
   'to answer a question and evaluate your answer.'
 const cardsProjectTech = 'Technologies: JavaScript, TypeScript, React, Redux Toolkit, Redux-saga, ' +
   'Axios, SCSS, ESLint, Prettier, Formik'
+
+const weatherProjectDescription = 'SPA for checking weather forecast. Implemented: work with local storage to update/delete city list,' +
+  'make forecast request with axios for every city in List. Based on previous response make another request to 2nd API to get detailed info about country where city is located ' +
+  'Every card in list is linked to detailed information about today\'s city weather'
+const weatherProjectTech = 'Technologies: JavaScript, TypeScript, React, React-routed-dom v6, Redux Toolkit, Redux-thunk, ' +
+  'Axios, Material UI, ESLint, Prettier'
 
 const socialNetworkProjectDescription = 'SPA for social actions - messaging and blogging. Implemented: ' +
   'login page with validation, error displaying and captcha; 404 page;' +
@@ -41,6 +48,9 @@ export const Projects: FC = () => {
   const cardsStyle = {
     backgroundImage: `url(${cardsImage})`
   }
+  const weatherStyle = {
+    backgroundImage: `url(${weatherImage})`
+  }
   return (
     <Fade>
       <div className={styles.projectsBlock} id={'projects'}>
@@ -55,6 +65,9 @@ export const Projects: FC = () => {
             <Project githubURL={'https://github.com/RinalinDS/learning_cards'} siteUrl={'https://rinalinds.github.io/learning_cards'} style={cardsStyle}
                      title={'Learning Cards'}
                      description={cardProjectDescription} tech={cardsProjectTech}/>
+            <Project githubURL={'https://github.com/RinalinDS/weatherapp'} siteUrl={'https://rinalinds.github.io/weatherapp/#/'} style={weatherStyle}
+                     title={'Weather App'}
+                     description={weatherProjectDescription} tech={weatherProjectTech}/>
           </div>
         </div>
       </div>
