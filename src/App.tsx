@@ -3,7 +3,7 @@ import { Header } from './components/header/Header';
 import { Bio } from './components/main/Bio';
 import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
-import { Contacts } from './components/contacts/Contacts';
+import { Education } from './components/contacts/Education';
 import { Footer } from './components/footer/Footer';
 
 export const App = () => {
@@ -13,7 +13,7 @@ export const App = () => {
       <Bio />
       <Skills />
       <Projects />
-      <Contacts />
+      <Education />
       <Footer />
     </div>
   );
