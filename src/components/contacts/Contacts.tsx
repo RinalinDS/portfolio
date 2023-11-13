@@ -4,20 +4,19 @@ import styles from './Contacts.module.scss';
 import { Title } from '../../common/components/title/Title';
 import { Fade } from 'react-awesome-reveal';
 
-
 export const Contacts = () => {
-
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
       message: '',
     },
-    onSubmit: values => {
-      alert('Sorry, this feature is currently in progress , can you please use links from \'Socials\' ?');
+    onSubmit: (values) => {
+      alert(
+        "Sorry, this feature is currently in progress , can you please use links from 'Socials' ?"
+      );
     },
   });
-
 
   return (
     <Fade>
@@ -26,8 +25,6 @@ export const Contacts = () => {
           <Title text={'Contacts'} />
           <Fade direction={'left'}>
             <form className={styles.form} onSubmit={formik.handleSubmit}>
-
-
               <input
                 className={styles.formArea}
                 type="text"
@@ -47,13 +44,13 @@ export const Contacts = () => {
                 {...formik.getFieldProps('message')}
               />
 
-              <button type="submit" className={styles.submit_btn}>Submit</button>
-
+              <button type="submit" className={styles.submit_btn}>
+                Submit
+              </button>
             </form>
           </Fade>
         </div>
       </div>
     </Fade>
-
   );
 };

@@ -1,29 +1,26 @@
-import styles from './Footer.module.scss'
+import styles from './Footer.module.scss';
 import { Title } from '../../common/components/title/Title';
 import { Fade } from 'react-awesome-reveal';
 import { socials } from './constants/socials';
 import { FC } from 'react';
 import { SocialIcon } from './SocialIcon/SocialIcon';
 
-
 export const Footer: FC = () => {
   return (
-    <Fade >
+    <Fade>
       <div className={styles.footer} id={'socials'}>
         <div className={styles.container}>
           <Title text={'Socials'} />
           <Fade direction={'left'}>
             <div className={styles.socials}>
-
               {socials.map(({ alt, href, img }) => {
-                return (
-                  <SocialIcon altText={alt} href={href} img={img} />
-                )
+                return <SocialIcon altText={alt} href={href} img={img} />;
               })}
-
             </div>
           </Fade>
-          <span className={styles.copyright}>2024 All Rights Reserved &copy;</span>
+          <span className={styles.copyright}>
+            2024 All Rights Reserved &copy;
+          </span>
         </div>
       </div>
     </Fade>

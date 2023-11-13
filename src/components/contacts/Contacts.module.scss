@@ -27,7 +27,6 @@
         color: $primaryTextColor;
         margin-bottom: 1.2rem;
 
-
         &:-webkit-autofill {
           border: 1px solid #4a4a4a;
           -webkit-text-fill-color: $primaryTextColor;
@@ -41,8 +40,8 @@
       }
 
       .formArea {
-        height: calc(1.5em + .75rem + 2px);
-        padding: .4rem 15px;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.4rem 15px;
 
         &:focus {
           border: 1px solid transparent;
@@ -59,7 +58,6 @@
           border: 1px solid transparent;
           transition: all 0.4s ease-in-out 0s;
         }
-
       }
 
       .submit_btn {
@@ -67,13 +65,8 @@
         background-color: $bgColor;
         align-self: center;
         border: none;
-        margin-top: 30px
+        margin-top: 30px;
       }
     }
   }
 }
-
-
-
-
-
