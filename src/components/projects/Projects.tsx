@@ -4,14 +4,14 @@ import { Project } from './project/Project';
 import { Title } from '../../common/components/title/Title';
 import { Fade } from 'react-awesome-reveal';
 import { projects } from './contants/projects';
-import { Link } from '../header/constants/navLinks';
+import { Label, Link } from '../header/constants/navLinks';
 
 export const Projects: FC = () => {
   return (
     <Fade triggerOnce>
       <div className={styles.projectsBlock} id={Link.Projects}>
         <div className={styles.projectsContainer}>
-          <Title text={'Projects'} />
+          <Title text={Label.Projects} />
           <div className={styles.projects}>
             {projects.map(
               ({

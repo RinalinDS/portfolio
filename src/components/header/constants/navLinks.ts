@@ -6,6 +6,14 @@ export enum Link {
   Socials = 'socials',
 }
 
+export enum Label {
+  Bio = 'Bio',
+  Skills = 'Skills',
+  Projects = 'Projects',
+  Education = 'Education',
+  Socials = 'Socials',
+}
+
 export const navLinks = [
   { id: 1, link: `#${Link.Bio}`, label: 'Bio' },
   { id: 2, link: `#${Link.Skills}`, label: 'Skills' },

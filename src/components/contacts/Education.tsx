@@ -4,14 +4,14 @@ import { Title } from '../../common/components/title/Title';
 import styles from './Education.module.scss';
 import { courses } from './courses';
 import { Course } from './Course/Course';
-import { Link } from '../header/constants/navLinks';
+import { Label, Link } from '../header/constants/navLinks';
 
 export const Education: FC = () => {
   return (
     <Fade triggerOnce>
       <div className={styles.educationBlock} id={Link.Education}>
         <div className={styles.container}>
-          <Title text={'Education'} />
+          <Title text={Label.Education} />
           <h3 className={styles.courseTitle}>
             List of additional educational material i have finished
           </h3>
