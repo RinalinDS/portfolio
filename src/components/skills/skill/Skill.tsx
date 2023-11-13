@@ -1,15 +1,14 @@
 import { FC } from 'react';
 import styles from './Skill.module.scss';
 
-type SkillPropsType = {
+type Props = {
   title: string;
-  description: string;
   style: {
     backgroundImage: string;
   };
 };
 
-export const Skill: FC<SkillPropsType> = ({ title, description, style }) => {
+export const Skill: FC<Props> = ({ title, style }) => {
   return (
     <div className={styles.skill}>
       <div className={styles.skillContainer}>
@@ -18,7 +17,6 @@ export const Skill: FC<SkillPropsType> = ({ title, description, style }) => {
 
       <div className={styles.skillInfo}>
         <h3 className={styles.skillTitle}>{title}</h3>
-        <span className={styles.description}>{description}</span>
       </div>
     </div>
   );

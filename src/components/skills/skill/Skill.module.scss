@@ -8,6 +8,12 @@
   align-items: center;
   text-align: center;
   margin: 10px;
+  @media screen and (max-width: 899px) {
+    width: 200px;
+  }
+  @media screen and (max-width: 630px) {
+    width: 120px;
+  }
 
   .skillContainer {
     height: 80px;
@@ -17,6 +23,14 @@
     align-items: center;
     margin-bottom: 20px;
     @include flex(row, center, center, nowrap);
+    @media screen and (max-width: 899px) {
+      height: 60px;
+      width: 60px;
+    }
+    @media screen and (max-width: 630px) {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   .skillIcon {
@@ -40,6 +54,9 @@
 
       margin: 0;
       padding-bottom: 1rem !important;
+      @media screen and (max-width: 630px) {
+        font-size: 16px;
+      }
     }
 
     .description {
