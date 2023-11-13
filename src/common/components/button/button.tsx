@@ -6,7 +6,7 @@ type ButtonPropsType = {
   url: string;
 };
 
-export const Button: FC<ButtonPropsType> = ({ url, text }) => {
+export const LinkButton: FC<ButtonPropsType> = ({ url, text }) => {
   return (
     <a
       className={styles.button}
