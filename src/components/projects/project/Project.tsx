@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import styles from './Project.module.scss';
 import { LinkButton } from '../../../common/components/button/button';
 import Tilt from 'react-parallax-tilt';

@@ -1,10 +1,10 @@
-import React from 'react';
+import { FC } from 'react';
 import { useFormik } from 'formik';
 import styles from './Contacts.module.scss';
 import { Title } from '../../common/components/title/Title';
 import { Fade } from 'react-awesome-reveal';
 
-export const Contacts = () => {
+export const Contacts: FC = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
@@ -19,11 +19,11 @@ export const Contacts = () => {
   });
 
   return (
-    <Fade>
+    <Fade triggerOnce>
       <div className={styles.contactsBlock} id={'contacts'}>
         <div className={styles.container}>
           <Title text={'Contacts'} />
-          <Fade direction={'left'}>
+          <Fade direction={'left'} triggerOnce>
             <form className={styles.form} onSubmit={formik.handleSubmit}>
               <input
                 className={styles.formArea}

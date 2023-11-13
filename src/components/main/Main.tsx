@@ -8,7 +8,7 @@ import { loadLinksPreset } from 'tsparticles-preset-links';
 import Particles from 'react-tsparticles';
 import { DownloadButton } from './DownloadButton/DownloadButton';
 
-export const Main: FC = () => {
+export const Bio: FC = () => {
   const options: ISourceOptions = {
     preset: 'links',
   };
@@ -16,7 +16,7 @@ export const Main: FC = () => {
     await loadLinksPreset(engine);
   };
   return (
-    <Fade>
+    <Fade triggerOnce>
       <div className={styles.main} id={'main'}>
         <div className={styles.container}>
           {/* 
@@ -27,7 +27,7 @@ export const Main: FC = () => {
             className={styles.particles}
           />
           <div className={styles.greetings}>
-            <span>Hello there!</span>
+            <span className={styles.hello}>Hello!</span>
             <span>
               My name is Pilyutin <span>Denis</span>
             </span>

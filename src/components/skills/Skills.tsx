@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Skills.module.scss';
 import { Skill } from './skill/Skill';
 import { Title } from '../../common/components/title/Title';
@@ -15,8 +14,9 @@ import htmlIconImage from '../../assets/image/skills/html.svg';
 import cssIconImage from '../../assets/image/skills/css3.svg';
 import storybookIconImage from '../../assets/image/skills/storybook.svg';
 import { Fade } from 'react-awesome-reveal';
+import { FC } from 'react';
 
-export const Skills = () => {
+export const Skills: FC = () => {
   const reactIcon = {
     backgroundImage: `url(${reactIconImage})`,
   };
@@ -55,11 +55,11 @@ export const Skills = () => {
     backgroundImage: `url(${storybookIconImage})`,
   };
   return (
-    <Fade>
+    <Fade triggerOnce>
       <div className={styles.skillsBlock} id={'skills'}>
         <div className={styles.skillsContainer}>
           <Title text={'Skills'} />
-          <Fade direction={'left'}>
+          <Fade direction={'left'} triggerOnce>
             <div className={styles.skills}>
               <Skill title={'React'} description={''} style={reactIcon} />
               <Skill title={'Redux'} description={''} style={reduxIcon} />

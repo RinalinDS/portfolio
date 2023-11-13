@@ -1,7 +1,6 @@
-import React from 'react';
 import './App.scss';
 import { Header } from './components/header/Header';
-import { Main } from './components/main/Main';
+import { Bio } from './components/main/Main';
 import { Skills } from './components/skills/Skills';
 import { Projects } from './components/projects/Projects';
 import { Contacts } from './components/contacts/Contacts';
@@ -11,7 +10,7 @@ export const App = () => {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Bio />
       <Skills />
       <Projects />
       <Contacts />
