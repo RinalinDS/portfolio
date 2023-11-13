@@ -1,0 +1,61 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+@import '../../common/components/button/button.module';
+
+.educationBlock {
+  padding: 100px 0;
+
+  .container {
+    @include container();
+    @include flex(column, center, center, nowrap);
+    gap: 36px;
+
+    .courseTitle {
+      color: $primaryTextColor;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .list {
+      @include flex(column, flex-start, flex-start, nowrap);
+      gap: 24px;
+      color: $primaryTextColor;
+
+      .item {
+        line-height: 1.6;
+        border-bottom: 1px solid $primaryTextColor;
+        width: 100%;
+        font-size: 20px;
+        @media screen and(max-width: 400px) {
+          font-size: 14px;
+        }
+        .certificate {
+          font-size: 24px;
+        }
+
+        h4 {
+          font-size: 28px;
+          color: $secondaryTextColor;
+          @media screen and(max-width: 400px) {
+            font-size: 24px;
+          }
+        }
+
+        div {
+          margin-bottom: 12px;
+          color: $primaryTextColor;
+
+          a {
+            color: $primaryTextColor;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+              color: $secondaryTextColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
