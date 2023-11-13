@@ -3,6 +3,7 @@ import { Title } from '../../common/components/title/Title';
 import { Fade } from 'react-awesome-reveal';
 import { socials } from './constants/socials';
 import { FC } from 'react';
+import { SocialIcon } from './SocialIcon/SocialIcon';
 
 
 export const Footer: FC = () => {
@@ -14,11 +15,9 @@ export const Footer: FC = () => {
           <Fade direction={'left'}>
             <div className={styles.socials}>
 
-              {socials.map(social => {
+              {socials.map(({ alt, href, img }) => {
                 return (
-                  <div className={styles.icon}>
-                    <a href={social.href} target={'_blank'} rel='noreferrer'><img src={social.img} alt={social.alt} /></a>
-                  </div>
+                  <SocialIcon altText={alt} href={href} img={img} />
                 )
               })}
 
@@ -30,6 +29,3 @@ export const Footer: FC = () => {
     </Fade>
   );
 };
-
-
-
