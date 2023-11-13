@@ -1,16 +1,16 @@
-import React from 'react';
+import { FC } from 'react';
 import styles from './Nav.module.scss';
+import { navLinks } from '../constants/navLinks';
+import { Link } from './Link/Link';
 
 
-export function Nav() {
+
+export const Nav: FC = () => {
     return (
-        <div className={styles.nav}>
-            <a href="#main">Main</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contacts">Contacts</a>
-            <a href="#socials">Socials</a>
-        </div>
+        <ul className={styles.nav}>
+            {navLinks.map(link => <Link key={link.id} label={link.label} link={link.link} />)}
+        </ul >
     );
 }
+
 
