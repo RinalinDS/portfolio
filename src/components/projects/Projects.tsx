@@ -14,6 +14,7 @@ export const Projects: FC = () => {
           <div className={styles.projects}>
             {projects.map(
               ({
+                id,
                 description,
                 githubURL,
                 style,
@@ -23,6 +24,7 @@ export const Projects: FC = () => {
               }) => {
                 return (
                   <Project
+                    key={id}
                     description={description}
                     githubURL={githubURL}
                     style={style}

@@ -10,7 +10,9 @@
     justify-content: center;
     width: 70%;
     height: 70%;
-
+    @media screen and (max-width: 630px) {
+      width: 100%;
+    }
     .skills {
       width: 100%;
       display: flex;

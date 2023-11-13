@@ -1,8 +1,8 @@
-import socialImage from '../../../assets/image/social.jpg';
-import todolistImage from '../../../assets/image/todolist.jpg';
-import cardsImage from '../../../assets/image/cards.jpg';
-import weatherImage from '../../../assets/image/weather.jpg';
-import trelloImage from '../../../assets/image/trello.jpg';
+import socialImage from '../../../assets/image/projects/social.jpg';
+import todolistImage from '../../../assets/image/projects/todolist.jpg';
+import cardsImage from '../../../assets/image/projects/cards.jpg';
+import weatherImage from '../../../assets/image/projects/weather.jpg';
+import trelloImage from '../../../assets/image/projects/trello.jpg';
 
 export enum Project {
   trello = 'Trello application',
