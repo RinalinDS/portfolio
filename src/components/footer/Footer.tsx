@@ -4,11 +4,12 @@ import { Fade } from 'react-awesome-reveal';
 import { socials } from './constants/socials';
 import { FC } from 'react';
 import { SocialIcon } from './SocialIcon/SocialIcon';
+import { Link } from '../header/constants/navLinks';
 
 export const Footer: FC = () => {
   return (
     <Fade triggerOnce>
-      <div className={styles.footer} id={'socials'}>
+      <div className={styles.footer} id={Link.Socials}>
         <div className={styles.container}>
           <Title text={'Socials'} />
           <Fade direction={'left'} triggerOnce>

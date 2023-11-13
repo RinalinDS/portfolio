@@ -7,6 +7,7 @@ import { Engine, ISourceOptions } from 'tsparticles-engine';
 import { loadLinksPreset } from 'tsparticles-preset-links';
 import Particles from 'react-tsparticles';
 import { DownloadButton } from './DownloadButton/DownloadButton';
+import { Link } from '../header/constants/navLinks';
 
 export const Bio: FC = () => {
   const options: ISourceOptions = {
@@ -17,7 +18,7 @@ export const Bio: FC = () => {
   };
   return (
     <Fade triggerOnce>
-      <div className={styles.main} id={'bio'}>
+      <div className={styles.main} id={Link.Bio}>
         <div className={styles.container}>
           {/* 
 // @ts-ignore */}
