@@ -12,11 +12,12 @@
 
     .socials {
       @include flex(row, space-between, center, nowrap);
-      width: 400px;
+      max-width: 300px;
       margin-top: 30px;
+      gap: 60px;
       @media screen and(max-width: 505px) {
         width: 100%;
-
+        gap: 30px;
       }
 
       .icon {

@@ -1,16 +1,11 @@
-import React from 'react';
 import styles from './Footer.module.scss'
 import { Title } from '../../common/components/title/Title';
-import tg from '../../assets/image/socials/tg.svg'
-import cw from '../../assets/image/socials/cw.svg'
-import gh from '../../assets/image/socials/gh.svg'
-import link from '../../assets/image/socials/link.svg'
 import { Fade } from 'react-awesome-reveal';
+import { socials } from './constants/socials';
+import { FC } from 'react';
 
 
-
-
-export const Footer = () => {
+export const Footer: FC = () => {
   return (
     <Fade >
       <div className={styles.footer} id={'socials'}>
@@ -19,31 +14,20 @@ export const Footer = () => {
           <Fade direction={'left'}>
             <div className={styles.socials}>
 
-              <div className={styles.icon}>
-                <a href="https://t.me/RinalinDS" target={'_blank'} rel='noreferrer'><img src={tg} alt="tgIcon" /></a>
-              </div>
-              <div className={styles.icon}>
-                <a href="https://www.linkedin.com/in/denis-pilyutin-647514197/" target={'_blank'} rel='noreferrer'><img src={link}
-                  alt="linkedinIcon" /></a>
-              </div>
-              <div className={styles.icon}>
-                <a href="https://github.com/RinalinDS" target={'_blank'} rel='noreferrer'><img src={gh} alt="tgIcon" /></a>
-              </div>
-              <div className={styles.icon}>
-                <a href="https://www.codewars.com/users/RinalinDS" target={'_blank'} rel='noreferrer'><img src={cw}
-                  alt="codewarsIcon" /></a>
-              </div>
-
+              {socials.map(social => {
+                return (
+                  <div className={styles.icon}>
+                    <a href={social.href} target={'_blank'} rel='noreferrer'><img src={social.img} alt={social.alt} /></a>
+                  </div>
+                )
+              })}
 
             </div>
           </Fade>
-
-          <span className={styles.copyright}>2022 All Rights Reserved Kappa</span>
+          <span className={styles.copyright}>2024 All Rights Reserved &copy;</span>
         </div>
       </div>
     </Fade>
-
-
   );
 };
 
