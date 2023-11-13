@@ -1,0 +1,23 @@
+@import './../../../common/styles/sass/variables.scss';
+
+
+.downloadButton {
+  padding: 10px 20px; 
+  margin-top: 30px;
+  color: $primaryTextColor;
+  background-color: $bgColor;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.cta {
+    background-color: $secondaryTextColor;
+    &:hover {
+      background-color: darken($secondaryTextColor, 20%); 
+    }
+  }
+}
