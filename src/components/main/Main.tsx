@@ -19,6 +19,8 @@ export const Main: FC = () => {
     <Fade>
       <div className={styles.main} id={'main'}>
         <div className={styles.container}>
+          {/* 
+// @ts-ignore */}
           <Particles
             options={options}
             init={initialize}
