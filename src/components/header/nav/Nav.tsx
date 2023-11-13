@@ -6,8 +6,8 @@ import { Link } from './Link/Link';
 export const Nav: FC = () => {
   return (
     <ul className={styles.nav}>
-      {navLinks.map((link) => (
-        <Link key={link.id} label={link.label} link={link.link} />
+      {navLinks.map(({ id, label, link }) => (
+        <Link key={id} label={label} link={link} />
       ))}
     </ul>
   );

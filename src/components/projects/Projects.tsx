@@ -7,7 +7,7 @@ import { projects } from './contants/projects';
 
 export const Projects: FC = () => {
   return (
-    <Fade>
+    <Fade triggerOnce>
       <div className={styles.projectsBlock} id={'projects'}>
         <div className={styles.projectsContainer}>
           <Title text={'Projects'} />

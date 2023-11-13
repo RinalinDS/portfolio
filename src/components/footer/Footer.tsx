@@ -7,11 +7,11 @@ import { SocialIcon } from './SocialIcon/SocialIcon';
 
 export const Footer: FC = () => {
   return (
-    <Fade>
+    <Fade triggerOnce>
       <div className={styles.footer} id={'socials'}>
         <div className={styles.container}>
           <Title text={'Socials'} />
-          <Fade direction={'left'}>
+          <Fade direction={'left'} triggerOnce>
             <div className={styles.socials}>
               {socials.map(({ alt, href, img }) => {
                 return <SocialIcon altText={alt} href={href} img={img} />;

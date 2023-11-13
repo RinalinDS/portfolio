@@ -24,7 +24,12 @@
 
     .greetings {
       @include flex(column, flex-start, flex-start, nowrap);
-
+      .hello {
+        display: block;
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+      }
       span {
         @include text(('Poppins', sans-serif), 32px, 1.2, 600);
         //@media screen and (max-width: 1143px) {
@@ -46,15 +51,37 @@
           span div {
             @include text(('Poppins', sans-serif), 32px, 1.8, 600);
             margin: 10px 0;
-            //@media screen and (max-width: 1143px) {
-            //  align-items: center;
-            //}
           }
         }
       }
-      //@media screen and (max-width: 1143px) {
-      //  align-items: center;
-      //}
+      @media screen and(max-width: 899px) {
+        .hello {
+          font-size: 32px;
+          display: inline;
+          width: auto;
+        }
+        span {
+          font-size: 24px;
+
+          &:nth-child(2) {
+            @include text(('Poppins', sans-serif), 40px, 1.2, 600);
+            letter-spacing: 2px;
+            margin: 10px 0;
+
+            span {
+              @include text(('Poppins', sans-serif), 40px, 1.2, 600);
+              letter-spacing: 2px;
+            }
+          }
+
+          &:nth-child(3) {
+            span div {
+              @include text(('Poppins', sans-serif), 24px, 1.8, 600);
+              margin: 10px 0;
+            }
+          }
+        }
+      }
     }
 
     .photo {
