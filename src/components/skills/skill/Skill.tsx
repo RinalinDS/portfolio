@@ -1,20 +1,19 @@
-import React, {FC} from 'react';
-import styles from './Skill.module.scss'
-
+import React, { FC } from 'react';
+import styles from './Skill.module.scss';
 
 type SkillPropsType = {
-  title: string
-  description: string
+  title: string;
+  description: string;
   style: {
-    backgroundImage: string
-  }
-}
+    backgroundImage: string;
+  };
+};
 
-export const Skill: FC<SkillPropsType> = ({title, description, style}) => {
+export const Skill: FC<SkillPropsType> = ({ title, description, style }) => {
   return (
     <div className={styles.skill}>
       <div className={styles.skillContainer}>
-        <div className={styles.skillIcon} style={style}/>
+        <div className={styles.skillIcon} style={style} />
       </div>
 
       <div className={styles.skillInfo}>
@@ -24,4 +23,3 @@ export const Skill: FC<SkillPropsType> = ({title, description, style}) => {
     </div>
   );
 };
-

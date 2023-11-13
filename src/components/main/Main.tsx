@@ -10,7 +10,7 @@ import { DownloadButton } from './DownloadButton/DownloadButton';
 
 export const Main: FC = () => {
   const options: ISourceOptions = {
-    preset: "links",
+    preset: 'links',
   };
   const initialize = async (engine: Engine) => {
     await loadLinksPreset(engine);
@@ -19,12 +19,25 @@ export const Main: FC = () => {
     <Fade>
       <div className={styles.main} id={'main'}>
         <div className={styles.container}>
-          <Particles options={options} init={initialize} className={styles.particles} />
+          <Particles
+            options={options}
+            init={initialize}
+            className={styles.particles}
+          />
           <div className={styles.greetings}>
             <span>Hello there!</span>
-            <span>My name is Pilyutin <span>Denis</span></span>
-            <ReactTypingEffect staticText={'I am'} text={['Frontend developer']} typingDelay={500} speed={100} />
-            <DownloadButton href='https://drive.google.com/uc?export=download&id=1wJgMp22trI69m-podw1KOWMu3ercRQWt'>Download CV</DownloadButton>
+            <span>
+              My name is Pilyutin <span>Denis</span>
+            </span>
+            <ReactTypingEffect
+              staticText={'I am'}
+              text={['Frontend developer']}
+              typingDelay={500}
+              speed={100}
+            />
+            <DownloadButton href="https://drive.google.com/uc?export=download&id=1wJgMp22trI69m-podw1KOWMu3ercRQWt">
+              Download CV
+            </DownloadButton>
           </div>
           <div className={styles.photo}>
             <Tilt>
@@ -35,5 +48,4 @@ export const Main: FC = () => {
       </div>
     </Fade>
   );
-}
-
+};

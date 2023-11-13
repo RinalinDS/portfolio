@@ -46,13 +46,12 @@
             width: 60%;
           }
         }
-
       }
     }
 
     .copyright {
       margin-top: 40px;
-      @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
+      @include text(('Open Sans', sans-serif), 15px, 1.6, 500);
       opacity: 0.6;
     }
   }

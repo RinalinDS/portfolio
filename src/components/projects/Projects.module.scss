@@ -2,7 +2,6 @@
 @import '../../common/styles/sass/mixins';
 
 .projectsBlock {
-
   padding: 100px 0;
 
   .projectsContainer {
@@ -15,18 +14,7 @@
       @include flex(row, space-between, flex-start, wrap);
       @media screen and (max-width: 1266px) {
         justify-content: center;
-
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

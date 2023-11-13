@@ -2,7 +2,7 @@
 @import '../../styles/sass/mixins';
 
 .button {
-  @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
+  @include text(('Open Sans', sans-serif), 15px, 1.6, 500);
   @include flex(row, center, center, nowrap);
   max-width: 100px;
   width: 100%;

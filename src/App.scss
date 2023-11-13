@@ -9,12 +9,11 @@
     &:nth-child(2n) {
       background-color: $bgColor;
     }
-
   }
 }
 
 ::selection {
-  background-color: #0062FF !important;
+  background-color: #0062ff !important;
   color: #fff !important;
 }
 
