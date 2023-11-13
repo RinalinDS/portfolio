@@ -13,8 +13,10 @@ export const Footer: FC = () => {
           <Title text={'Socials'} />
           <Fade direction={'left'} triggerOnce>
             <div className={styles.socials}>
-              {socials.map(({ alt, href, img }) => {
-                return <SocialIcon altText={alt} href={href} img={img} />;
+              {socials.map(({ alt, href, img, id }) => {
+                return (
+                  <SocialIcon key={id} altText={alt} href={href} img={img} />
+                );
               })}
             </div>
           </Fade>
