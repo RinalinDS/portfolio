@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from './Main.module.scss';
+import styles from './Bio.module.scss';
 import { Fade } from 'react-awesome-reveal';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
@@ -17,7 +17,7 @@ export const Bio: FC = () => {
   };
   return (
     <Fade triggerOnce>
-      <div className={styles.main} id={'main'}>
+      <div className={styles.main} id={'bio'}>
         <div className={styles.container}>
           {/* 
 // @ts-ignore */}
