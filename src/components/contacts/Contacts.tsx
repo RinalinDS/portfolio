@@ -1,8 +1,8 @@
 import React from 'react';
-import {useFormik} from 'formik';
+import { useFormik } from 'formik';
 import styles from './Contacts.module.scss';
-import {Title} from '../../common/components/title/Title';
-import {Fade} from 'react-awesome-reveal';
+import { Title } from '../../common/components/title/Title';
+import { Fade } from 'react-awesome-reveal';
 
 
 export const Contacts = () => {
@@ -23,7 +23,7 @@ export const Contacts = () => {
     <Fade>
       <div className={styles.contactsBlock} id={'contacts'}>
         <div className={styles.container}>
-          <Title text={'Contacts'}/>
+          <Title text={'Contacts'} />
           <Fade direction={'left'}>
             <form className={styles.form} onSubmit={formik.handleSubmit}>
 
@@ -57,5 +57,3 @@ export const Contacts = () => {
 
   );
 };
-
-export default Contacts;
