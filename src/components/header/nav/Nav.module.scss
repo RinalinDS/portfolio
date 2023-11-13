@@ -1,13 +1,27 @@
 @import '../../../common/styles/sass/mixins';
 
+
+
 .nav {
-    width: 300px;
+    list-style: none;
+    max-width: 300px;
     display: flex;
     justify-content: space-between;
+    align-items: center; 
+    padding: 15px;
+    gap: 12px;
     margin-right: 30px;
+    @media screen and(max-width: 899px) {
+        margin-right: 0;
+      }
     & a {
-        @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
-        text-decoration: none;
-
+      @include text(("Open Sans", sans-serif), 15px, 1.6, 500);
+      text-decoration: none;
+      color: #fff; 
+      transition: color 0.3s ease; 
+  
+      &:hover {
+        color: #00bcd4; 
+      }
     }
-}
+  }
