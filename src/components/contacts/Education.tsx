@@ -13,9 +13,9 @@ export const Education: FC = () => {
         <div className={styles.container}>
           <Title text={Label.Education} />
           <h3 className={styles.courseTitle}>
-            List of additional educational material i have finished
+            List of additional educational materials I have finished
           </h3>
-          <div className={styles.list}>
+          <ul className={styles.list}>
             {courses.map(
               ({ id, title, author, link, src, certificationUrl }) => (
                 <Course
@@ -28,7 +28,7 @@ export const Education: FC = () => {
                 />
               )
             )}
-          </div>
+          </ul>
         </div>
       </div>
     </Fade>

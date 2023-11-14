@@ -36,6 +36,7 @@
     padding: 25px 20px;
     background-color: $bgSecondColor;
     border-radius: 0 0 5px 5px;
+    flex: 1;
 
     .projectTitle {
       @include text(('Poppins', sans-serif), 26px, 1.2, 600);
