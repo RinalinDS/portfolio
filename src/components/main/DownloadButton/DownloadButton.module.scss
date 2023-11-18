@@ -11,14 +11,19 @@
   font-family: $font-family;
   font-size: $font-size;
   font-weight: $font-weight;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  transition: all 0.4s ease-out;
 
   &.cta {
     background-color: $secondaryTextColor;
     &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
       background-color: darken($secondaryTextColor, 20%);
+    }
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+      background-color: darken($secondaryTextColor, 10%);
     }
   }
 }
