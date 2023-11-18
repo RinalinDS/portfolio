@@ -1,11 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0d6ec0cd.css",
-    "main.js": "/portfolio/static/js/main.0d1d0137.js",
+    "main.css": "/portfolio/static/css/main.f6ab4b46.css",
+    "main.js": "/portfolio/static/js/main.2a59fdbf.js",
     "static/media/genius.jpg": "/portfolio/static/media/genius.9874c105764d0808c527.jpg",
-    "static/media/social.jpg": "/portfolio/static/media/social.e43a449ef9079bcd2bf2.jpg",
     "static/media/cards.jpg": "/portfolio/static/media/cards.4a00326d4c6f146bd6dc.jpg",
-    "static/media/todolist.jpg": "/portfolio/static/media/todolist.746435968aa0b269f6b8.jpg",
     "static/media/trello.jpg": "/portfolio/static/media/trello.5b6b3de686a6d12869e9.jpg",
     "static/media/rrd.png": "/portfolio/static/media/rrd.7b8bfc4e82d079a38d9a.png",
     "static/media/weather.jpg": "/portfolio/static/media/weather.0621a41b92b8165e40cf.jpg",
@@ -24,11 +22,11 @@
     "static/media/js.svg": "/portfolio/static/media/js.ef08bf5cf7a8dde88ab016fe718f92b3.svg",
     "static/media/gh.svg": "/portfolio/static/media/gh.5084227bbe3fc0aeaac5abb6cb55f87c.svg",
     "static/media/tg.svg": "/portfolio/static/media/tg.321a02657812a2b333e11ef22b7509d5.svg",
-    "main.0d6ec0cd.css.map": "/portfolio/static/css/main.0d6ec0cd.css.map",
-    "main.0d1d0137.js.map": "/portfolio/static/js/main.0d1d0137.js.map"
+    "main.f6ab4b46.css.map": "/portfolio/static/css/main.f6ab4b46.css.map",
+    "main.2a59fdbf.js.map": "/portfolio/static/js/main.2a59fdbf.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d6ec0cd.css",
-    "static/js/main.0d1d0137.js"
+    "static/css/main.f6ab4b46.css",
+    "static/js/main.2a59fdbf.js"
   ]
 }
