@@ -38,7 +38,7 @@ export const Bio: FC = () => {
               typingDelay={500}
               speed={100}
             />
-            <DownloadButton href="https://drive.google.com/uc?export=download&id=1Ste4DWHtrkBY9OMXGXjbhktLZVAL6sxn">
+            <DownloadButton href="https://drive.google.com/uc?export=download&id=1PRvVMeX4WVtgFPXkoZqfQEWqol2GV5jZ">
               Download CV
             </DownloadButton>
           </div>
