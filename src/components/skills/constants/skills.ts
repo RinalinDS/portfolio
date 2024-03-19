@@ -14,16 +14,20 @@ import formik from '../../../assets/image/skills/formik.jpg';
 import jest from '../../../assets/image/skills/jest.png';
 import reacthookForm from '../../../assets/image/skills/react-hook-form.png';
 import reactRouterDom from '../../../assets/image/skills/rrd.png';
+import tailwind from '../../../assets/image/skills/tailwind.png';
+import next from '../../../assets/image/skills/next.png';
 
 enum Skill {
   JavaScript = 'JavaScript',
   TypeScript = 'TypeScript',
   React = 'React',
+  Next = 'Next.js',
   Redux = 'Redux',
   RTKQ = 'Redux Toolkit + Query',
   ReactQuery = 'React Query',
   ReactRouter = 'React Router',
   MUI = 'Material UI',
+  TailwindCSS = 'TailwindCSS',
   SASS = 'SASS',
   GraphQL = 'GraphQL',
   REST = 'Rest API',
@@ -115,6 +119,16 @@ const skillDetails = {
       backgroundImage: `url(${reacthookForm})`,
     },
   },
+  [Skill.TailwindCSS]: {
+    style: {
+      backgroundImage: `url(${tailwind})`,
+    },
+  },
+  [Skill.Next]: {
+    style: {
+      backgroundImage: `url(${next})`,
+    },
+  },
 };
 
 export const skills = [
@@ -129,6 +143,8 @@ export const skills = [
     style: skillDetails[Skill.TypeScript].style,
   },
   { id: 3, title: Skill.React, style: skillDetails[Skill.React].style },
+  { id: 17, title: Skill.Next, style: skillDetails[Skill.Next].style },
+
   { id: 4, title: Skill.Redux, style: skillDetails[Skill.Redux].style },
   { id: 5, title: Skill.RTKQ, style: skillDetails[Skill.RTKQ].style },
   {
@@ -142,6 +158,12 @@ export const skills = [
     style: skillDetails[Skill.ReactRouter].style,
   },
   { id: 8, title: Skill.MUI, style: skillDetails[Skill.MUI].style },
+  {
+    id: 18,
+    title: Skill.TailwindCSS,
+    style: skillDetails[Skill.TailwindCSS].style,
+  },
+
   { id: 9, title: Skill.SASS, style: skillDetails[Skill.SASS].style },
   { id: 10, title: Skill.GraphQL, style: skillDetails[Skill.GraphQL].style },
   { id: 11, title: Skill.REST, style: skillDetails[Skill.REST].style },
