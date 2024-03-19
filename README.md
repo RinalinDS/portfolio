@@ -1,19 +1,20 @@
 Welcome to my personal portfolio! This project is a showcase of my skills, projects, and education, built using TypeScript, React, and SCSS. Feel free to explore and get to know more about me.
 
-
 ```mermaid
 timeline
     title Timeline of this project
     April 2022 : Built first iteration
     October 2023 : Improved code base keeping structure from 2022
+    Mart 2024 : Added new project
 
 ```
 
 Getting Started
 
 To run this project locally, follow these steps:
+
 1. Clone the repository:
-`git clone git@github.com:RinalinDS/portfolio.git`
+   `git clone git@github.com:RinalinDS/portfolio.git`
 
 2. Install dependencies:
 
@@ -24,7 +25,7 @@ To run this project locally, follow these steps:
 
 bash
 
-    yarn start 
+    yarn start
 
 OR
 
@@ -45,6 +46,5 @@ Technologies Used
     TypeScript
     React
     SCSS
-
 
 ## Published [here](https://rinalinds.github.io/portfolio/).
