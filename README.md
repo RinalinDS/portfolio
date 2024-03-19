@@ -5,7 +5,7 @@ timeline
     title Timeline of this project
     April 2022 : Built first iteration
     October 2023 : Improved code base keeping structure from 2022
-    Mart 2024 : Added new project
+    Mart 2024 : Added new project and skills
 
 ```
 
