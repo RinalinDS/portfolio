@@ -3,11 +3,13 @@
 import cardsImage from '../../../assets/image/projects/cards.jpg';
 import weatherImage from '../../../assets/image/projects/weather.jpg';
 import trelloImage from '../../../assets/image/projects/trello.jpg';
+import windrunnerImage from '../../../assets/image/projects/windrunner.png';
 
 export enum Project {
   trello = 'Trello application',
   weather = 'Weather application',
   cards = 'Learning cards',
+  windrunner = 'Windrunner',
   // todolist = 'Todolist application',
   // socialNetwork = 'Social network',
 }
@@ -79,6 +81,13 @@ const projectDetails: ProjectDetails = {
       backgroundImage: `url(${weatherImage})`,
     },
   },
+  [Project.windrunner]: {
+    description:
+      'Windrunner App: A Next.js and TailwindCSS-powered application that allows users to check the current weather and a 5-day forecast for any city. Features include city search, location-based weather check, and responsive design. ',
+    style: { backgroundImage: `url(${windrunnerImage})` },
+    techStack:
+      'Technologies: Next.js, TypeScript, TailwindCSS, React Query, Axios, Prettier',
+  },
   //   [Project.todolist]: {
   //     techStack:
   //       ' Technologies: JavaScript, TypeScript, React, Redux, Redux-Thunk Material UI, SCSS, Formik',
@@ -133,6 +142,15 @@ export const projects: ProjectType[] = [
     title: Project.cards,
     description: projectDetails[Project.cards].description,
     techStack: projectDetails[Project.cards].techStack,
+  },
+  {
+    id: 6,
+    githubURL: 'https://github.com/RinalinDS/windrunner',
+    siteURL: 'https://windrunner.vercel.app/',
+    style: projectDetails[Project.windrunner].style,
+    title: Project.windrunner,
+    description: projectDetails[Project.windrunner].description,
+    techStack: projectDetails[Project.windrunner].techStack,
   },
   // {
   //   id: 1,
